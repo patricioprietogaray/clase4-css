@@ -1,0 +1,57 @@
+/* importo la fuente desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+* {
+    /* es para que los dibujos no acumulen espacios, es decir que respete los tamaños
+    de cada objeto. asigno el tamaño final  y todo lo que se agrega se descuenta, como
+    padding, border, margin, etc. */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* aplicar a todo el header el color de fonde no se vera cortado*/
+header {
+    background-color: aquamarine;
+    /* altura del header */
+    height: 50px;
+    /* doy padding solo a la parte superior del header */
+    padding-top: 5px;
+}
+
+
+/* etiqueta que contiene a otra. Aplicar todo lo que esta dentro de header tal cosa */
+header * {
+    display: inline;
+    /* el color solo aplicará a cada objeto interno de header y no a todo header */
+    /* background-color: aquamarine; */
+}
+
+li {
+    margin: 5px; 
+}
+
+a {
+    /* para sacarle la decoracion del subrayado del enlace html */
+    text-decoration: none;
+    color:black;
+    font-family: 'Satisfy', cursive;
+}
+
+.logo {
+    margin: 20px;
+    /* fuente desde light (finita) hasta bold (gruesa) */
+    /* font-weight: 700; */
+
+    /* tamaño de la fuente usar valores absolutos en px */
+    font-size: 28px;
+
+    /* estilo de fuente normal, cursiva, etc */
+    /* font-style: oblique; */
+
+    /* aplico la fuente importada */
+    font-family: 'Satisfy', cursive;
+}
