@@ -1,6 +1,9 @@
 /* importo la fuente desde google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 * {
     /* es para que los dibujos no acumulen espacios, es decir que respete los tamaños
@@ -10,7 +13,9 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px;
+    /* se aplica a todo el documento las excepciones
+    estarán en el lugar correspondiente */
 }
 
 /* aplicar a todo el header el color de fonde no se vera cortado*/
@@ -39,19 +44,48 @@ a {
     text-decoration: none;
     color:black;
     font-family: 'Satisfy', cursive;
+    font-size: 20px;
 }
 
 .logo {
-    margin: 20px;
+    margin-left: 20px;
     /* fuente desde light (finita) hasta bold (gruesa) */
     /* font-weight: 700; */
 
     /* tamaño de la fuente usar valores absolutos en px */
-    font-size: 28px;
+    font-size: 32px;
 
     /* estilo de fuente normal, cursiva, etc */
     /* font-style: oblique; */
 
     /* aplico la fuente importada */
     font-family: 'Satisfy', cursive;
+}
+
+#section-1 {
+    /* background-color: red; */
+    font-family: 'Lato', sans-serif;
+}
+
+#section-1 p {
+    /* background-color: red; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    
+}
+
+#section-1 h2 {
+    /* solo el titulo h2 de section-1 */
+    /* centrar el texto */
+    text-align: center;
+}
+
+#section-1 p::first-letter {
+    font-size:3em;
+	font-family: 'Lato', sans-serif;
+    font-weight: 800;
+	margin:0px 0px 0px 4px;
+	float:left;
+    padding: 0px 5px 0px 0px;
+    /* background-color: red; */
 }
