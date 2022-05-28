@@ -16,6 +16,11 @@ body {
     margin: 0px;
     /* se aplica a todo el documento las excepciones
     estarán en el lugar correspondiente */
+
+    /* posicion absoluta para el documento 
+    permite que el menu se mantenga pegado arriba
+    (header) */
+    position: absolute;
 }
 
 /* aplicar a todo el header el color de fonde no se vera cortado*/
@@ -25,6 +30,14 @@ header {
     height: 50px;
     /* doy padding solo a la parte superior del header */
     padding-top: 5px;
+    /* dejar fijo la parte del menu pero se pone
+    por encima y no respeta el ancho total*/
+    position: fixed;
+    /* hay que forzar la grafica de la pagina 
+    seteando el ancho por ejemplo*/
+    width: 100%;
+    z-index: 1;
+   
 }
 
 
@@ -67,6 +80,26 @@ a {
     font-family: 'Lato', sans-serif;
 }
 
+#special-section {
+    /* imagen de fondo */
+    background-image: url(./assets/img/pexels-jaymantri-5439.jpg);
+    max-width: 500px;
+    /* repetir la imagen */
+    background-repeat: no-repeat;
+    /* centrar la imagen */
+    background-position: center;
+    /* background-color: red; */
+    /* ampliar la imagen a los limites de la seccion */
+    background-size: cover;    
+    /* z-index es posicionar los objetos si estarán mas arriba o mas abajo de otros objetos,
+    en este caso estará arriba de otros objetos */
+    z-index: 1;
+    /* position sticky para habilitar ese z-index 
+    cuando el z index se iguala da prioridad (está por encima) a la etiqueta de mas abajo*/
+    position: sticky;
+
+}
+
 .secciones p {
 
     /* ancho del 70% de la pantalla */
@@ -87,6 +120,7 @@ a {
     /* solo el titulo h2 de section-1 */
     /* centrar el texto */
     text-align: center;
+    max-width: 70%;
 }
 
 .secciones p::first-letter {
@@ -98,3 +132,4 @@ a {
     padding: 0px 5px 0px 0px;
     font-style: oblique;    
 } 
+
