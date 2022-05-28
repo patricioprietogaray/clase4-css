@@ -29,7 +29,8 @@ header {
     /* altura del header */
     height: 50px;
     /* doy padding solo a la parte superior del header */
-    padding-top: 5px;
+    /* estaba en 5px pero lo subí cuando aplique el efecto hover en a */
+    padding-top: 0px;
     /* dejar fijo la parte del menu pero se pone
     por encima y no respeta el ancho total*/
     position: fixed;
@@ -58,6 +59,18 @@ a {
     color:black;
     font-family: 'Satisfy', cursive;
     font-size: 20px;
+    padding: 5px;
+}
+
+/* cuando posiciono el mouse sobre la etiqueta a produce el siguiente efecto */
+a:hover {
+    background-color: rgb(55, 233, 174);
+    /* le doy un padding similar a la etiqueta a si no el menu se movera intentando
+    adaptarse al ancho del mismo */
+    padding: 4px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .logo {
@@ -83,7 +96,8 @@ a {
 #special-section {
     /* imagen de fondo */
     background-image: url(./assets/img/pexels-jaymantri-5439.jpg);
-    max-width: 500px;
+    max-width: 800px;
+    margin-top: 30px;
     /* repetir la imagen */
     background-repeat: no-repeat;
     /* centrar la imagen */
