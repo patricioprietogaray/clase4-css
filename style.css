@@ -62,30 +62,39 @@ a {
     font-family: 'Satisfy', cursive;
 }
 
-#section-1 {
+.secciones {
     /* background-color: red; */
     font-family: 'Lato', sans-serif;
 }
 
-#section-1 p {
-    /* background-color: red; */
+.secciones p {
+
+    /* ancho del 70% de la pantalla */
+    /* texto justificado  */
+
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    
+    max-width: 70%;
+    text-align: justify;
+    /* para centrarlo con margin 
+    arriba y abajo cero y de los costados
+    automatico */
+    margin: 0 auto;
 }
 
-#section-1 h2 {
+
+.secciones h2 {
     /* solo el titulo h2 de section-1 */
     /* centrar el texto */
     text-align: center;
 }
 
-#section-1 p::first-letter {
+.secciones p::first-letter {
     font-size:3em;
 	font-family: 'Lato', sans-serif;
     font-weight: 800;
 	margin:0px 0px 0px 4px;
 	float:left;
     padding: 0px 5px 0px 0px;
-    /* background-color: red; */
-}
+    font-style: oblique;    
+} 
