@@ -36,7 +36,7 @@ header {
     /* hay que forzar la grafica de la pagina 
     seteando el ancho por ejemplo*/
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
    
 }
 
@@ -94,7 +94,7 @@ a {
     /* z-index es posicionar los objetos si estarán mas arriba o mas abajo de otros objetos,
     en este caso estará arriba de otros objetos */
     z-index: 1;
-    /* position sticky para habilitar ese z-index 
+    /* position sticky para que se vea sobre otros objetos se combina con z-index 
     cuando el z index se iguala da prioridad (está por encima) a la etiqueta de mas abajo*/
     position: sticky;
 
